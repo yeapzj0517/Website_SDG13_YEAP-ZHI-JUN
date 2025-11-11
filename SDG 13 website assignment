@@ -1,0 +1,54 @@
+# 🌍 Climate Action Hackathon 2025 – Urban Heat & Flood Resilience
+
+This is a simple and responsive **HTML + CSS website** created to support **SDG 13: Climate Action**.  
+The website promotes a hackathon event that encourages participants to design and build digital solutions for **urban heat** and **flood resilience**.
+
+---
+
+## 🧭 Purpose
+
+The purpose of this project is to:
+- Raise awareness about **climate change** (SDG 13)
+- Encourage community and student participation in **climate action**
+- Provide event details such as schedule, speakers, and registration form
+- Promote **innovation and collaboration** through a hackathon format
+
+---
+
+## 🖥️ Website Features
+
+- Responsive and clean layout suitable for desktop and mobile  
+- Simple navigation menu for easy access to all sections  
+- Modern eco-friendly design using green color palette  
+- Sections included:
+  1. **About the Event** – Overview of the hackathon  
+  2. **SDG 13** – Information about Climate Action  
+  3. **Schedule** – 3-day event timeline  
+  4. **Speakers & Mentors** – Guest profiles with photos  
+  5. **Hackathon Tracks** – Project focus areas  
+  6. **Resources** – Helpful links and data sources  
+  7. **Registration Form** – Allows participants to sign up  
+  8. **Sponsors & Partners** – Logos and acknowledgments  
+  9. **Contact Section** – Email and social media links  
+
+---
+
+## 🛠️ Tools Used
+
+- **HTML5** – Structure and content  
+- **CSS3** – Styling and responsive layout  
+- **Media Queries** – For mobile and desktop views  
+- **Accessibility features** – Skip links and semantic HTML
+
+---
+
+## 🎨 Design Overview
+
+- **Primary Colors:** Green tones to represent sustainability and nature  
+- **Typography:** System UI / Arial for clean and readable text  
+- **Layout Style:** Centered sections, rounded cards, and smooth shadows  
+- **Hero Section:** Background image with overlay text and call-to-action button  
+
+---
+
+## 📁 File Structure
