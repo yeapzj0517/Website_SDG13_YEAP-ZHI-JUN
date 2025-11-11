@@ -1,0 +1,343 @@
+:root {
+    --primary-color: #2e7d32; 
+    --secondary-color: #1b5e20;
+    --accent-color: #66bb6a;
+    --text-color: #222;
+    --light-bg: #f5f5f5;
+    max-width: auto;
+  }
+
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: system-ui, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: rgb(67, 65, 65);
+  }
+
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: var(--primary-color);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: top 0.3s;
+    z-index: 100;
+  }
+  .skip-link:focus {
+    top: 10px;
+  }
+
+  header {
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 1rem;
+  }
+  
+  .logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .nav-links li {
+    margin-left: 1rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a:focus {
+    text-decoration: underline;
+  }
+
+  .hero {
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), 
+    url(img/hero.jpg) center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 6rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+  
+  .hero h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+  
+  .btn {
+    display: inline-block;
+    background: var(--accent-color);
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .btn:hover,
+  .btn:focus {
+    background: var(--secondary-color);
+  }
+
+  section {
+  padding: 3rem 1rem;   
+  margin-bottom: 2rem;       
+  border-radius: 10px;       
+  background-color: #fff;    
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); 
+  border-top: 2px solid #e0e0e0;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+section:nth-of-type(odd) {
+  background-color: #f7fff7;
+}
+
+section:nth-of-type(even) {
+  background-color: #ffffff;
+}
+
+  
+  section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  section:nth-of-type(odd) {
+  background-color: #f7fdf7; 
+}
+
+section:nth-of-type(even) {
+  background-color: #878282; 
+}
+
+
+  .about ul,
+.tracks ul,
+.resources ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+  text-align: left
+  
+}
+
+.about p,
+.sdg13 p {
+  max-width: 800px;
+  margin: 0 auto 1rem auto;
+  text-align: center;
+}
+
+.schedule ul {
+    max-width: 600px;
+    margin: 0 auto;
+    list-style: none;
+  }
+  
+  .schedule li {
+    background: var(--light-bg);
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    border-left: 4px solid var(--accent-color);
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .card {
+    background: var(--light-bg);
+    text-align: center;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .card:hover {
+  transform: translateY(-4px);
+  transition: transform 0.2s ease;
+}
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+  }
+
+  .tracks ul li {
+    background: var(--light-bg);
+    margin: 0.4rem auto;
+    max-width: 500px;
+    padding: 0.6rem;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  label {
+    margin-top: 1rem;
+    font-weight: 600;
+  }
+  
+  input,
+  select,
+  textarea {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 0.3rem;
+    font-size: 1rem;
+  }
+  
+  button[type="submit"] {
+    margin-top: 1.5rem;
+    cursor: pointer;
+    border: none;
+  }
+
+  .logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+}
+  
+  .logo-grid img {
+  height: 45px;    
+  width: auto;       
+  object-fit: contain;   
+  background: white;  
+  border-radius: 8px;
+  padding: 10px;         
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: auto;
+}
+
+.logo-box {
+  background-color: #ffffff;          
+  border: 1px solid #ddd;           
+  border-radius: 10px;                
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);  
+  padding: 1rem;                     
+  width: 280px;                     
+  height: 120px;                 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;   
+}
+
+.logo-box h3{
+  font-size: 0.8rem;  
+  color: var(--primary-color);
+  line-height: 1.2;
+}
+
+.logo-box:hover {
+  transform: translateY(-4px);       
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+  .contact a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .contact a:hover,
+  .contact a:focus {
+    text-decoration: underline;
+  }
+
+  footer {
+    background: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .hero h2 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1.1rem;
+    }
+  
+    .nav-links a {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    body {
+      font-size: 1.1rem;
+    }
+  
+    section {
+      padding: 4rem 2rem;
+    }
+  }
+
+  section:nth-of-type(even) {
+  background-color: #fafafa;
+}
